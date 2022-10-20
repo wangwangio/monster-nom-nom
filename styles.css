@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Melted Monster';
+  src: url(./assets/Font/Melted\ Monster.ttf);
+}
+
+@font-face {
+  font-family: 'Irish Grover';
+  src: url(./assets/Font/irish-grover.regular.ttf);
+}
+
+:root {
+  --color-1: #00FFD1;
+  --color-2: #EB0000;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Irish Grover';
+  background-color: var(--black);
+}
+
+h1 {
+  font-family: 'Melted Monster';
+  color: var(--color-1);
+}
