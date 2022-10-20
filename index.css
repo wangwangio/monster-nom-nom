@@ -1,0 +1,101 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100'
+
+ 
+html;body{
+  font-family:'Roboto Mono', 'monospace';
+  background: #212121;
+  display: flex;
+  
+}
+
+@font-face {
+  font-family: 'Melted Monster';
+  src: url('/assest/Melted-Monster.ttf') format('truetype');
+  
+}
+@font-face{
+  font-family: 'Irish Grover';
+  src: url('/assest/IrishGrover.ttf') format('truetype');
+
+}
+
+h1{
+  font-family: 'Melted Monster';
+  font-size: 70px;
+}
+
+.containerUno{
+  margin: auto;
+  width: 90%;
+  justify-content:center;
+  align-items: center;
+  display:grid;
+  flex-direction: column;
+  place-items: center;
+  height: 100vh;
+}
+.monster{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container{
+  margin: auto;
+  width: 90%;
+  justify-content:center;
+  align-items: center;
+  display:grid;
+  flex-direction: column;
+  place-items: center;
+  height: 60vh;
+}
+.wellcome{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.text{
+  font-weight:100;
+  font-size:28px;
+  color :#FAFAFA;
+  display: flex;
+  text-align: center;
+}
+.dud{
+  color:#757575;
+}
+
+.start{
+  padding: 15px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  padding:25px;
+  background: #952C28;
+  color: white;
+  background-blend-mode: multiply;
+  box-shadow: 0em .25em 2em 0em #B0FFF1;
+  border-radius: 1.25em;
+  font-size: 30px;
+  font-family: 'Irish Grover';
+}
+
+.start:hover {
+  margin-top: 70px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  padding: 0;
+  height: 0;
+  align-items: center;
+  text-align: center;
+  color: #B0FFF1;
+  text-shadow: 0px 3px 15px #00FFD1;
+  margin-top: 70px;
+  border: none;
+}
