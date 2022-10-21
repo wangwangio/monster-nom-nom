@@ -75,3 +75,4 @@ class TextScramble {
   }
   
   next()
+

@@ -5,7 +5,7 @@ html;body{
   font-family:'Roboto Mono', 'monospace';
   background: #212121;
   display: flex;
-  background-image: url(/assest/Images/background.png);
+  background-image: url(/assets/Images/background.png);
   background-size: 1822px 919px;
   background-repeat: no-repeat;
 
@@ -14,12 +14,12 @@ html;body{
 
 @font-face {
   font-family: 'Melted Monster';
-  src: url('/assest/Font/Melted\ Monster.ttf') format('truetype');
+  src: url('/assets/Font/Melted\ Monster.ttf') format('truetype');
   
 }
 @font-face{
   font-family: 'Irish Grover';
-  src: url('/assest/Font/irish-grover.regular.ttf') format('truetype');
+  src: url('/assets/Font/irish-grover.regular.ttf') format('truetype');
 
 }
 
