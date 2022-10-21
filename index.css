@@ -5,23 +5,29 @@ html;body{
   font-family:'Roboto Mono', 'monospace';
   background: #212121;
   display: flex;
-  
+  background-image: url(/assest/Images/background.png);
+  background-size: 1822px 919px;
+  background-repeat: no-repeat;
+
+
 }
 
 @font-face {
   font-family: 'Melted Monster';
-  src: url('/assest/Melted-Monster.ttf') format('truetype');
+  src: url('/assest/Font/Melted\ Monster.ttf') format('truetype');
   
 }
 @font-face{
   font-family: 'Irish Grover';
-  src: url('/assest/IrishGrover.ttf') format('truetype');
+  src: url('/assest/Font/irish-grover.regular.ttf') format('truetype');
 
 }
 
 h1{
   font-family: 'Melted Monster';
   font-size: 70px;
+  text-align: center;
+  color: #00FFD1;
 }
 
 .containerUno{
@@ -54,6 +60,10 @@ h1{
   align-items: center;
   flex-direction: column;
 }
+.moster{
+  width: 220px;
+  height: 220px;
+}
 .text{
   font-weight:100;
   font-size:28px;
@@ -74,7 +84,7 @@ h1{
   align-items: center;
   height: 1rem;
   padding:25px;
-  background: #952C28;
+  background: #EB0000;
   color: white;
   background-blend-mode: multiply;
   box-shadow: 0em .25em 2em 0em #B0FFF1;
