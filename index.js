@@ -58,9 +58,9 @@ class TextScramble {
   
   const phrases = [
     'Bienvenidos',
-    'al',
-    'sacrificio',
-    'quien se sacrificara por el bien comun??',
+    'intrusos',
+    'mi casa',
+    'estais preparado para ser devorados?',
   ]
   
   const el = document.querySelector('.text')

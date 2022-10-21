@@ -38,7 +38,7 @@ h1{
   display:grid;
   flex-direction: column;
   place-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 .monster{
   display: flex;
@@ -61,8 +61,8 @@ h1{
   flex-direction: column;
 }
 .moster{
-  width: 220px;
-  height: 220px;
+  width: 350px;
+  height: 420px;
 }
 .text{
   font-weight:100;
@@ -70,13 +70,13 @@ h1{
   color :#FAFAFA;
   display: flex;
   text-align: center;
+  margin-top: 25px;
 }
 .dud{
   color:#757575;
 }
 
 .start{
-  padding: 15px;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ h1{
   margin-top: 70px;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   line-height: 1.5rem;
   text-decoration: none;
   padding: 0;
@@ -106,6 +106,5 @@ h1{
   text-align: center;
   color: #B0FFF1;
   text-shadow: 0px 3px 15px #00FFD1;
-  margin-top: 70px;
   border: none;
 }
