@@ -1,0 +1,96 @@
+body {
+  background-color: var(--black) !important;
+}
+
+.container {
+  max-height: 100vh;
+  max-width: 300px;
+}
+
+.top {
+  max-width: 767px;
+  max-height: 100vh;
+}
+
+.top img {
+  position: absolute;
+  width: 1500px;
+  height: 750px;
+  left: -505px;
+  top: -150px;
+  object-fit: cover;
+  object-position: 20px 10px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.top button {
+  position: relative;
+  z-index: 3;
+  font-family: 'Irish Grover';
+  background-color: #F07C1D;
+  color: var(--color-1);
+  padding: 3px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.top button a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3rem;
+}
+
+.monster {
+  width: auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+}
+
+.monster img {
+  width: 200px;
+  height: 200px;
+}
+
+.coders {
+  position: relative;
+  padding: 10px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  
+  color: var(--color-1);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  font-family: 'Irish Grover';
+  z-index: 10;
+}
+
+.bottom img {
+  position: absolute;
+  width: 1500px;
+  height: 750px;
+  left: -550px;
+  top: 50px;
+  z-index: 2;
+  transform: rotate(-180deg);
+}
