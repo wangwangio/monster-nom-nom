@@ -4,7 +4,6 @@ coders = [{ name: "Adrian", id: "1" }, { name: "Albert", id:"2" }, ...]
 divCoder.inlinerHTML = `
 <div> ${coders.map((coder) => {document.getElementById("1").delete} )}
 `
-
 function deleteCoder(id) {
     coders.filter((coder => coder.id !== id))
 } 
@@ -30,3 +29,14 @@ for (let btnCoders of buttons) {
 buttons.onclick = function() {
     console.log("KILLED")
 };
+
+const list = document.getElementsByClassName('btnCoders');
+for (let btnCoders of list) {
+    btnCoders.addEventListener('click', function() {
+        btnCoders.remove();
+    })
+}
+
+function refreshPage() {
+    window.location.reload();
+}
