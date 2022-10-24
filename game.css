@@ -53,15 +53,57 @@ body {
 
 .coders {
   position: absolute;
-  top: 400px;
+  width: 90%;
+  top: 420px;
+  margin: 10px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 30px;
   flex-wrap: wrap;
   
+ /*  color: var(--color-1);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); */
+  
+  font-family: 'Irish Grover';
+  z-index: 1;
+}
+
+.coders button {
+  font-family: 'Irish Grover';
+  background-color: #F7FC00;
+  color: #310156;
+  padding: 3px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.coders__list {
+  position: absolute;
+  width: 90%;
+  top: 150px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+
   color: var(--color-1);
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -69,14 +111,18 @@ body {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  
-  font-family: 'Irish Grover';
-  z-index: 1;
+  z-index: 100;
+}
+
+.coder {
+  width: 1rem 1rem;
+  height: 1rem;
+  padding: 10px;
 }
 
 .bottom {
   width: auto;
-  height: 467px;
+  height: 470px;
   background-image: url('./assets/Images/background.png');
   background-repeat: no-repeat;
   background-size: 1500px 750px;
