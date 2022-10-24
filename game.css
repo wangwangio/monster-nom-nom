@@ -1,0 +1,85 @@
+body {
+  background-color: #240433 !important;
+}
+
+.container {
+  max-height: 100vh;
+  padding: 0px 0px !important;
+}
+
+.top {
+  width: auto;
+  height: 212px;
+  background-image: url('./assets/Images/background.png');
+  background-repeat: no-repeat;
+  background-size: 1500px 750px;
+  background-position: 45% 30%;
+}
+
+.top button {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-family: 'Irish Grover';
+  background-color: #F7FC00;
+  color: #310156;
+  padding: 3px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.top button a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3rem;
+}
+
+.monster {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+}
+
+.monster img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 160px;
+  z-index: 2;
+}
+
+.coders {
+  position: absolute;
+  top: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  
+  color: var(--color-1);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  font-family: 'Irish Grover';
+  z-index: 1;
+}
+
+.bottom {
+  width: auto;
+  height: 467px;
+  background-image: url('./assets/Images/background.png');
+  background-repeat: no-repeat;
+  background-size: 1500px 750px;
+  background-position: 47% 30%;
+  transform: rotate(-180deg);
+}
