@@ -3,7 +3,7 @@
  
 html;body{
   font-family:'Roboto Mono', 'monospace';
-  background: #212121;
+  background: #40085A  ;
   display: flex;
   background-image: url(/assets/Images/background.png);
   background-size: 1822px 919px;
@@ -27,7 +27,7 @@ h1{
   font-family: 'Melted Monster';
   font-size: 70px;
   text-align: center;
-  color: #6FA8AD;
+  color: white;
   margin: 0;
 }
 
@@ -65,13 +65,14 @@ h1{
 .moster{
   width: 350px;
   height: 420px;
-  border: solid;
-  border: #eb6200;
+
+  
+  
 }
 .text{
   font-weight:100;
   font-size:28px;
-  color:#71A8AF;
+  color: white;
   display: flex;
   text-align: center;
   margin-top: 25px;
@@ -89,8 +90,8 @@ h1{
   align-items: center;
   height: 1rem;
   padding:25px;
-  background: #eb6200;
-  color: white;
+  background: #F7FC00;
+  color: 310156;
   background-blend-mode: multiply;
   box-shadow: 0em .25em 2em 0em #B0FFF1;
   border-radius: 1.25em;
