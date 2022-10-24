@@ -61,6 +61,9 @@ h1{
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: auto;
+  width: 90%;
+  height: 60vh;
 }
 .moster{
   width: 350px;
@@ -75,15 +78,13 @@ h1{
   color: white;
   display: flex;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 50px;
   font-family: 'Melted Monster';
 }
-.dud{
-  color:#757575;
-}
+
 
 .start{
-  margin-top: 70px;
+  width: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
