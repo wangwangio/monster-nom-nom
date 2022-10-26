@@ -134,8 +134,103 @@ const coders = [
   name: 'Guillem',
   scream: 'Hakuna Matata!'
   }
+];
+
+const monsterSounds = [
+  {
+    id: 1,
+    name: 'monster',
+    sound: './assets/Sounds/sounds-2/impactsplat01.mp3.flac',
+  },
+  {
+    id: 2,
+    name: 'monster2',
+    sound: './assets/Sounds/sounds-2/impactsplat02.mp3.flac',
+  },
+  {
+    id: 3,
+    name: 'monster3',
+    sound: './assets/Sounds/sounds-2/impactsplat03.mp3.flac',
+  },
+  {
+    id: 4,
+    name: 'monster4',
+    sound: './assets/Sounds/sounds-2/impactsplat04.mp3.flac',
+  },
+];
+
+const sounds = [
+  {
+    id: 1,
+    name: 'button1',
+    sound: './assets/Sounds/sounds-5/inventory/bubble.wav',
+  },
+  {
+    id: 2,
+    name: 'button2',
+    sound: './assets/Sounds/sounds-5/inventory/bubble2.wav',
+  },
+  {
+    id: 3,
+    name: 'button3',
+    sound: './assets/Sounds/sounds-5/inventory/bubble3.wav',
+  },
 ]
 
+//para que suene la cancion principal al abrir el juego
+const mainTheme = new Audio('./assets/Sounds/monster-theme.mp3');
+mainTheme.volume = 0.3;
+//mainTheme.play();
+
+//monster sonido
+const monsterEats = document.getElementById('monsterSound');
+
+monsterEats.addEventListener('click', monsterSound);
+
+function monsterSound(){
+  let randomMonsterAudio = Math.floor(Math.random() * (3-0) + 0);
+  const monsterAudio = new Audio(`${monsterSounds[randomMonsterAudio].sound}`)
+  monsterAudio.volume = 0.3;
+  monsterAudio.loop = false;
+  monsterAudio.play();
+}
+
+//button 1 sonido
+const buttonSound1 = document.getElementById('addCoder');
+
+buttonSound1.addEventListener('click', btnSound);
+
+function btnSound(){
+  const btnAudio1 = new Audio(`${sounds[0].sound}`);
+  btnAudio1.volume = 0.3;
+  btnAudio1.loop = false;
+  btnAudio1.play();
+}
+
+//button 2 sonido
+const buttonSound2 = document.getElementById('addAllCoders');
+
+buttonSound2.addEventListener('click', btnSound2);
+
+function btnSound2(){
+  const btnAudio2 = new Audio(`${sounds[1].sound}`);
+  btnAudio2.volume = 0.3;
+  btnAudio2.loop = false;
+  btnAudio2.play();
+}
+
+//button return sonido
+const buttonSound3 = document.getElementById('btnReturn');
+
+buttonSound3.addEventListener('click', btnSound3);
+
+function btnSound3(){
+  const btnAudio3 = new Audio(`${sounds[2].sound}`);
+  btnAudio3.volume = 0.3;
+  btnAudio3.play();
+}
+
+//boton Add Coder
 const btnAdd = document.querySelector('.btnAddCoder');
 const codersContainerList = document.getElementById('monster');
 
@@ -150,11 +245,28 @@ function addCoder(e) {
 
   coders.forEach((el) => {
     const singleCoder = document.createElement('div');
+    singleCoder.setAttribute('id', 'singleCoder');
+    singleCoder.classList.add('coder');
  
     codersContainerList.lastElementChild.appendChild(singleCoder);
     codersContainerList.lastElementChild.lastElementChild.innerHTML = `${el.name}`;
-    singleCoder.classList.add('coder');
   })
+
+  //ahora añadimos que cuando se haga click en el singleCoder que aparezca un nuevo div con sus datos
+  const btnAddChosen = document.getElementById('singleCoder');
+  const codersContainerChosen = document.getElementById('monster');
+
+  for (i=0; i < btnAddChosen.length; i++){
+    btnAddChosen[i].addEventListener('click', coderSacrifice(btnAddChosen[i]));
+  }
+
+  function coderSacrifice(el){
+    const coderChosen = document.createElement('div');
+    codersContainerChosen.appendChild(coderChosen);
+    codersContainerChosen.lastElementChild.classList.add('coders__chosen');
+
+    codersContainerChosen.lastElementChild.innerHTML = `${el.innerHTML}`;
+  }
 }
 
 
@@ -166,8 +278,8 @@ function addCoder(e) {
 
 
 
-//how to make div inside div js
-//how to take data from js to html
+
+//add sounds!!!
 //function transform scale img when coder eaten
 
 //function random

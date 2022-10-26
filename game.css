@@ -21,8 +21,8 @@ body {
   right: 10px;
   top: 15px;
   font-family: 'Irish Grover';
-  background-color: #F7FC00;
-  color: #310156;
+  background-color: var(--color-button);
+  color: var(--color-text-2);
   padding: 3px 20px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -35,7 +35,7 @@ body {
   font-size: 1.3rem;
 }
 
-.monster {
+.monster a {
   width: auto;
   display: flex;
   justify-content: center;
@@ -78,8 +78,8 @@ body {
 
 .coders button {
   font-family: 'Irish Grover';
-  background-color: #F7FC00;
-  color: #310156;
+  background-color: var(--color-button);
+  color: var(--color-text-2);
   padding: 3px 20px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -93,30 +93,64 @@ body {
 .coders__list {
   position: absolute;
   width: 90%;
-  top: 100px;
-  height: auto;
+  top: 130px;
+  height: 280px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 5px;
+
+  overflow: auto;
+  white-space: nowrap;
 
   font-size: 1.3rem;
   font-weight: bold;
   font-family: 'Irish Grover';
 
-  color: var(--color-1);
+  color: var(--color-text);
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 100;
 }
 
 .coder {
   padding: 10px;
+}
+
+.coder:active {
+  color: var(--color-button);
+}
+
+.coders__chosen {
+  position: absolute;
+  width: 90%;
+  top: 430px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Irish Grover';
+
+  color: var(--color-text);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 100;
 }
 
 .bottom {
