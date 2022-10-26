@@ -10,8 +10,10 @@
 
 :root {
   --bg: #240433;
-  --color-1: #F7FC00;
   --color-text: #00FFD1;
+  --color-text-2: #310156;
+  --color-button: #F7FC00;
+  --color-pink: #FF1493;
   --white: #fff;
   --black: #000;
 }
