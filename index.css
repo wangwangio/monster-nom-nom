@@ -3,7 +3,7 @@
  
 html;body{
   font-family:'Roboto Mono', 'monospace';
-  background: #240433  ;
+  background: #240433 ;
   display: flex;
   background-image: url(/assets/Images/background.png);
   background-size: 1822px 919px;
@@ -27,19 +27,19 @@ h1{
   font-family: 'Melted Monster';
   font-size: 70px;
   text-align: center;
-  color: white;
+  color: #00FFD1;
   margin: 0;
 }
 
 .containerUno{
   margin: auto;
-  width: 90%;
+  width: 100%;
   justify-content:center;
   align-items: center;
   display:grid;
   flex-direction: column;
   place-items: center;
-  height: 80vh;
+  height: 100vh;
 }
 .monster{
   display: flex;
@@ -75,7 +75,7 @@ h1{
 .text{
   font-weight:100;
   font-size:28px;
-  color: white;
+  color: #00FFD1;
   display: flex;
   text-align: center;
   margin-top: 50px;
@@ -98,10 +98,11 @@ h1{
   border-radius: 1.25em;
   font-size: 30px;
   font-family: 'Irish Grover';
+  
 }
 
 .start:hover {
-  margin-top: 70px;
+  margin-top: 25px;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
@@ -111,8 +112,21 @@ h1{
   height: 0;
   align-items: center;
   text-align: center;
-  color: #B0FFF1;
-  text-shadow: 0px 3px 15px #73AAB2;
+  color: #00FFD1;
+  text-shadow: 0px 3px 15px #00FFD1;
   border: none;
-  margin: 95px;
+  
+}
+
+audio{
+  margin-top: 40px;
+  box-shadow: 0px 3px 15px #73AAB2;
+  border-radius: 30px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: #F7FC00;
+ 
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color:#240433;
 }

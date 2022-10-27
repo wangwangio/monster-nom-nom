@@ -1,43 +1,32 @@
 body {
-  background-color: var(--black) !important;
+  background-color: #240433 !important;
 }
 
 .container {
   max-height: 100vh;
-  max-width: 300px;
+  padding: 0px 0px !important;
 }
 
 .top {
-  max-width: 767px;
-  max-height: 100vh;
-}
-
-.top img {
-  position: absolute;
-  width: 1500px;
-  height: 750px;
-  left: -505px;
-  top: -150px;
-  object-fit: cover;
-  object-position: 20px 10px;
-  z-index: 2;
-  overflow: hidden;
+  width: auto;
+  height: 212px;
+  background-image: url('./assets/Images/background.png');
+  background-repeat: no-repeat;
+  background-size: 1500px 750px;
+  background-position: 45% 30%;
 }
 
 .top button {
-  position: relative;
-  z-index: 3;
+  position: absolute;
+  right: 10px;
+  top: 15px;
   font-family: 'Irish Grover';
-  background-color: #F07C1D;
-  color: var(--color-1);
+  background-color: #F7FC00;
+  color: #310156;
   padding: 3px 20px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-  margin-top: 10px;
 }
 
 .top button a {
@@ -48,49 +37,94 @@ body {
 
 .monster {
   width: auto;
-  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 4;
+  background-color: transparent !important;
 }
 
 .monster img {
   width: 200px;
   height: 200px;
+  position: absolute;
+  top: 160px;
+  z-index: 2;
 }
 
 .coders {
-  position: relative;
+  position: absolute;
+  width: 90%;
+  top: 420px;
+  margin: 10px;
   padding: 10px;
-  margin-top: 50px;
-
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 30px;
   flex-wrap: wrap;
   
+ /*  color: var(--color-1);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); */
+  
+  font-family: 'Irish Grover';
+  z-index: 1;
+}
+
+.coders button {
+  font-family: 'Irish Grover';
+  background-color: #F7FC00;
+  color: #240433;
+  padding: 3px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.coders__list {
+  position: absolute;
+  width: 90%;
+  top: 100px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Irish Grover';
+
   color: var(--color-1);
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  
-  font-family: 'Irish Grover';
-  z-index: 10;
+  z-index: 100;
 }
 
-.bottom img {
-  position: absolute;
-  width: 1500px;
-  height: 750px;
-  left: -550px;
-  top: 50px;
-  z-index: 2;
+.coder {
+  padding: 10px;
+}
+
+.bottom {
+  width: auto;
+  height: 470px;
+  background-image: url('./assets/Images/background.png');
+  background-repeat: no-repeat;
+  background-size: 1500px 750px;
+  background-position: 47% 30%;
   transform: rotate(-180deg);
 }

@@ -57,9 +57,8 @@ class TextScramble {
   // ——————————————————————————————————————————————————
   
   const phrases = [
-    'Bienvenidos',
-    'intrusos',
-    'mi casa',
+    'Bienvenidos intrusos',
+    'a mi casa',
     'estais preparado para ser devorados?',
   ]
   
@@ -76,3 +75,5 @@ class TextScramble {
   
   next()
 
+  //let audio = document.getElementById("myaudio");
+  //audio.volume = 0.2;
