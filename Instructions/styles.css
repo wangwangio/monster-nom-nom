@@ -1,0 +1,135 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:100";
+
+@font-face {
+  font-family: 'Melted Monster';
+  src: url(../assets/Font/Melted\ Monster.ttf) format('truetype');
+}
+  
+@font-face {
+  font-family: 'Irish Grover';
+  src: url(../assets/Font/irish-grover.regular.ttf) format('truetype');
+}
+
+:root {
+  --color-1: #00FFD1;
+  --color-2: #EB0000;
+  --white: #fff;
+  --black: #000;
+  --purple: #240433;
+}
+  
+body{
+  background-color: var(--purple) !important;
+  width: auto;
+  height: 100vh;
+  background-image: url('/assets/Images/backgroundPinkPurple.png');
+  background-size: 1500px 800px;
+  background-position: 45% 30%;
+  position: relative;
+}
+
+.pageTwo{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+
+.monsterMouse {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index:5;
+}
+
+.btnContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+  color: 310156;
+  font-size: 20px;
+}
+
+.returnBtn{
+  width: 130px;
+  padding:5px;
+  height: 25px;
+  text-align: center;
+  font-family: 'Irish Grover' !important ;
+  color: var(--black);
+  text-decoration: none;
+  background: #F7FC00;
+  background-blend-mode: multiply;
+  box-shadow: 0em .25em 2em 0em #B0FFF1;
+  border-radius: 1.25em;
+}
+
+.titleInstructions{
+  display: flex;
+  margin-top: 5%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-family: 'Melted Monster' !important;
+  color: var(--color-1);
+  font-size: 50px ;
+}
+
+.instructionsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px 50px 20px;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* no coge el estilo del texto */
+.instructions{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Irish-Grover' !important; 
+  color: var(--white);
+  margin: 20px;
+}
+
+.monsterCortado{
+  width: 200px;
+}
+
+.nextBtn{
+  font-family: 'Irish Grover' !important ;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.btnContainer2{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 170px;
+  align-items: center;
+  height: 1rem;
+  padding:25px;
+  background: #F7FC00;
+  color: 310156;
+  background-blend-mode: multiply;
+  box-shadow: 0em .25em 2em 0em #B0FFF1;
+  border-radius: 1.25em;
+  font-size: 30px;
+  z-index: 1;
+} 
+
