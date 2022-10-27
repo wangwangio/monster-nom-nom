@@ -1,5 +1,5 @@
 body {
-  background-color: #240433 !important;
+  background-color: var(--bg) !important;
 }
 
 .container {
@@ -78,6 +78,7 @@ body {
 
 .coders button {
   font-family: 'Irish Grover';
+
   background-color: var(--color-button);
   color: var(--color-text-2);
   padding: 3px 10px;
