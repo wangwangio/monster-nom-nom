@@ -76,7 +76,7 @@ const coders = [
   },
   {
   id: 16,
-  name: 'Alexandra',
+  name: 'Alex.',
   scream: 'Mamaaaaaaa!'
   },
   {
@@ -96,7 +96,7 @@ const coders = [
   },
   {
   id: 20,
-  name: 'Francisco',
+  name: 'Fran.',
   scream: 'Livin la vida loca!'
   },
   {
@@ -232,14 +232,15 @@ function btnSound3(){
   btnAudio3.play();
 }
 
-/* //boton Add Coder
-const btnAdd = document.querySelector('.btnAddCoder');
-const codersContainerList = document.getElementById('monster');
+//boton Add Coder
+const btnAdd = document.querySelector('.btnAddAllCoders');
+const codersContainerList = document.getElementById('coders');
 
 btnAdd.addEventListener('click', addCoder);
 
 function addCoder(e) {
   const codersList = document.createElement('div');
+  codersList.setAttribute('id', 'codersList');
 
   codersContainerList.appendChild(codersList);
   codersContainerList.lastElementChild.classList.add('coders__list');
@@ -252,7 +253,26 @@ function addCoder(e) {
     codersContainerList.lastElementChild.appendChild(singleCoder);
     codersContainerList.lastElementChild.lastElementChild.innerHTML = `${el.name}`;
   })
+}
 
+const monsterKill = document.getElementById('monsterSound');
+monsterKill.addEventListener('click', randomKill);
+
+/* function randomKill(){
+  var randomIndex = Math.floor(Math.random() * coders.length);
+  var randomSplice = coders.splice(randomIndex, 1);
+  return randomSplice;
+} */
+
+function coderKill(){
+  var coderDead = document.getElementById('singleCoder');
+  coderDead.parentNode.removeChild(singleCoder[0]);
+}
+
+
+
+
+ /*
   //ahora añadimos que cuando se haga click en el singleCoder que aparezca un nuevo div con sus datos
   const btnAddChosen = document.getElementById('singleCoder');
   const codersContainerChosen = document.getElementById('monster');
@@ -269,13 +289,6 @@ function addCoder(e) {
     codersContainerChosen.lastElementChild.innerHTML = `${el.innerHTML}`;
   }
 } */
-
-
-
-
-
-
-
 
 
 //function transform scale img when coder eaten

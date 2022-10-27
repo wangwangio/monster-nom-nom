@@ -54,17 +54,17 @@ body {
 .coders {
   position: absolute;
   width: 90%;
-  top: 420px;
-  margin: 10px;
-  padding: 10px;
+  top: 380px;
+  margin: 15px;
+  padding: 5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 5px;
   flex-wrap: wrap;
   
- /*  color: var(--color-1);
+/*   color: var(--color-1);
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -73,28 +73,26 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3); */
   
   font-family: 'Irish Grover';
-  z-index: 1;
+  z-index: 50;
 }
 
 .coders button {
   font-family: 'Irish Grover';
   background-color: var(--color-button);
   color: var(--color-text-2);
-  padding: 3px 20px;
+  padding: 3px 10px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .coders__list {
-  position: absolute;
-  width: 90%;
-  top: 130px;
-  height: 280px;
+  width: 100%;
+  height: 220px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -106,8 +104,9 @@ body {
   white-space: nowrap;
 
   font-size: 1.3rem;
-  font-weight: bold;
   font-family: 'Irish Grover';
+  font-weight: bold;
+  color: var(--color-text);
 
   color: var(--color-text);
   background: rgba(255, 255, 255, 0.2);
@@ -116,7 +115,8 @@ body {
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  z-index: 100;
+
+  z-index: 50;
 }
 
 .coder {
@@ -126,7 +126,7 @@ body {
 .coder:active {
   color: var(--color-button);
 }
-
+/*
 .coders__chosen {
   position: absolute;
   width: 90%;
@@ -151,7 +151,7 @@ body {
   -webkit-backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 100;
-}
+} */
 
 .bottom {
   width: auto;
