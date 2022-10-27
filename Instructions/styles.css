@@ -16,6 +16,11 @@
   --white: #fff;
   --black: #000;
   --purple: #240433;
+  --bg: #240433;
+  --color-text: #00FFD1;
+  --color-text-2: #310156;
+  --color-button: #F7FC00;
+  --color-pink: #FF1493;
 }
   
 body{
@@ -57,11 +62,11 @@ body{
   height: 25px;
   text-align: center;
   font-family: 'Irish Grover' !important ;
-  color: var(--black);
+  color: var(--color-text-2);
   text-decoration: none;
   background: #F7FC00;
-  background-blend-mode: multiply;
-  box-shadow: 0em .25em 2em 0em #B0FFF1;
+  /* background-blend-mode: multiply;
+  box-shadow: 0em .25em 2em 0em #B0FFF1; */
   border-radius: 10px;
 }
 
@@ -122,6 +127,7 @@ h1{
   font-family: 'Irish Grover' !important ;
   color: var(--black);
   text-decoration: none;
+  color: var(--color-text-2);
 }
 
 .btnContainer2{
@@ -133,9 +139,9 @@ h1{
   height: 1rem;
   padding:25px;
   background: #F7FC00;
-  color: 310156;
-  background-blend-mode: multiply;
-  box-shadow: 0em .2em 2em 0em #B0FFF1;
+  color: var(--color-text-2);
+  /* background-blend-mode: multiply;
+  box-shadow: 0em .2em 2em 0em #B0FFF1; */
   border-radius: 10px;
   font-size: 30px;
   z-index: 1;

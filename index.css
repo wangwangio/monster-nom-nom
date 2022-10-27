@@ -64,7 +64,7 @@ h1{
   flex-direction: column;
   margin: auto;
   width: 90%;
-  height: 60vh;
+  height: 55vh;
 }
 .moster{
   width: 350px;
@@ -73,16 +73,17 @@ h1{
 
 .text{
   font-weight:100;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #00FFD1;
   display: flex;
   text-align: center;
-  margin-top: -30px;
+  margin-top: 10px;
   font-family: 'Melted Monster';
 }
 
 
 .start{
+  margin-top: 30px;
   width: 170px;
   display: flex;
   flex-direction: column;
@@ -91,12 +92,13 @@ h1{
   height: 1rem;
   padding:25px;
   background: #F7FC00;
-  color: 310156;
-  background-blend-mode: multiply;
-  box-shadow: 0em .25em 2em 0em #B0FFF1;
-  border-radius: 1.25em;
+  color: var(--color-text-2);
+ /*  background-blend-mode: multiply;
+  box-shadow: 0em .25em 2em 0em #B0FFF1; */
+  border-radius: 10px;
   font-size: 30px;
   font-family: 'Irish Grover';
+  border: none;
   
 }
 
