@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monster Nom Nom</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <title>GAME</title>
 
@@ -19,41 +20,48 @@
     <div class="imgDiv">
         <button class="btnMonster"> <img class="imgGO" src="/monster-nom-nom/assets/Images/monster.png" alt="monster"></button>
     </div>
-    <div class="divCoders">
-        <button id="1" class=btnCoders>Adrian</button>
-        <button class=btnCoders>Albert</button>
-        <button class=btnCoders>Alejandra</button>
-        <button class=btnCoders>Alejandro</button>
-        <button class=btnCoders>Aless</button>
-        <button class=btnCoders>Alexandra</button>
-        <button class=btnCoders>Andres</button>
-        <button class=btnCoders>Camilo</button>
-        <button class=btnCoders>Carla</button>
-        <button class=btnCoders>Cristian</button>
-        <button class=btnCoders>Eberth</button>
-        <button class=btnCoders>Eduard</button>
-        <button class=btnCoders>Erick</button>
-        <button class=btnCoders>Federico</button>
-        <button class=btnCoders>Francisco</button>
-        <button class=btnCoders>Gary</button>
-        <button class=btnCoders>Guillem</button>
-        <button class=btnCoders>Ingrid</button>
-        <button class=btnCoders>Isabel</button>
-        <button class=btnCoders>Jerry</button>
-        <button class=btnCoders>Judit</button>
-        <button class=btnCoders>Lidia</button>
-        <button class=btnCoders>Mamadou</button>
-        <button class=btnCoders>Mario</button>
-        <button class=btnCoders>Mateu</button>
-        <button class=btnCoders>Rocio</button>
-        <button class=btnCoders>Rodrigo</button>
+    <div>
+        <h3 id="counter-label">0</h3>
+
+        <div class="divCoders">
+            <button class=btnCoders onclick="incrementClick() ">Adrian</button>
+            <button class=btnCoders onclick="incrementClick() ">Albert</button>
+            <button class=btnCoders onclick="incrementClick() ">Alejandra</button>
+            <button class=btnCoders onclick="incrementClick() ">Alejandro</button>
+            <button class=btnCoders onclick="incrementClick() ">Aless</button>
+            <button class=btnCoders onclick="incrementClick() ">Alexandra</button>
+            <button class=btnCoders onclick="incrementClick() ">Andres</button>
+            <button class=btnCoders onclick="incrementClick() ">Camilo</button>
+            <button class=btnCoders onclick="incrementClick() ">Carla</button>
+            <button class=btnCoders onclick="incrementClick() ">Cristian</button>
+            <button class=btnCoders onclick="incrementClick() ">Eberth</button>
+            <button class=btnCoders onclick="incrementClick() ">Eduard</button>
+            <button class=btnCoders onclick="incrementClick() ">Erick</button>
+            <button class=btnCoders onclick="incrementClick() ">Federico</button>
+            <button class=btnCoders onclick="incrementClick() ">Francisco</button>
+            <button class=btnCoders onclick="incrementClick() ">Gary</button>
+            <button class=btnCoders onclick="incrementClick() ">Guillem</button>
+            <button class=btnCoders onclick="incrementClick() ">Ingrid</button>
+            <button class=btnCoders onclick="incrementClick() ">Isabel</button>
+            <button class=btnCoders onclick="incrementClick() ">Jerry</button>
+            <button class=btnCoders onclick="incrementClick() ">Judit</button>
+            <button class=btnCoders onclick="incrementClick() ">Lidia</button>
+            <button class=btnCoders onclick="incrementClick() ">Mamadou</button>
+            <button class=btnCoders onclick="incrementClick() ">Mario</button>
+            <button class=btnCoders onclick="incrementClick() ">Mateu</button>
+            <button class=btnCoders onclick="incrementClick() ">Rocio</button>
+            <button class=btnCoders onclick="incrementClick() ">Rodrigo</button>
+        </div>
+
+        <div class="imgDiv ">
+            <button type="button " class="btnPA " onClick="refreshPage() "> <p class="... ">RESTART</p> </button>
+            <button class="btnPA" onclick="exitBtn() ">EXIT</button>
+        </div>
     </div>
 
-    <div class="imgDiv"> <button type="button" class="btnPA" onClick="refreshPage()">RESTART</button></div>
-
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+    <script src="index.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3 " crossorigin="anonymous "></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
 
 </body>
 
