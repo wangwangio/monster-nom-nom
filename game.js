@@ -136,6 +136,7 @@ const coders = [
   }
 ];
 
+//librería sonidos monster
 const monsterSounds = [
   {
     id: 1,
@@ -159,6 +160,7 @@ const monsterSounds = [
   },
 ];
 
+//librería de sonidos FX
 const sounds = [
   {
     id: 1,
@@ -230,12 +232,11 @@ function btnSound3(){
   btnAudio3.play();
 }
 
-//boton Add Coder
+/* //boton Add Coder
 const btnAdd = document.querySelector('.btnAddCoder');
 const codersContainerList = document.getElementById('monster');
 
 btnAdd.addEventListener('click', addCoder);
-
 
 function addCoder(e) {
   const codersList = document.createElement('div');
@@ -267,7 +268,7 @@ function addCoder(e) {
 
     codersContainerChosen.lastElementChild.innerHTML = `${el.innerHTML}`;
   }
-}
+} */
 
 
 
@@ -277,9 +278,6 @@ function addCoder(e) {
 
 
 
-
-
-//add sounds!!!
 //function transform scale img when coder eaten
 
 //function random
