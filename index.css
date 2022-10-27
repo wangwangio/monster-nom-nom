@@ -1,0 +1,131 @@
+@import '/styles.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100'
+
+ 
+html;body{
+  font-family:'Roboto Mono', 'monospace';
+  background: var(--bg) ;
+  display: flex;
+  background-image: url(/assets/Images/background.png);
+  background-size: 1822px 919px;
+  background-repeat: no-repeat;
+
+
+}
+
+@font-face {
+  font-family: 'Melted Monster';
+  src: url('/assets/Font/Melted\ Monster.ttf') format('truetype');
+  
+}
+@font-face{
+  font-family: 'Irish Grover';
+  src: url('/assets/Font/irish-grover.regular.ttf') format('truetype');
+
+}
+
+h1{
+  font-family: 'Melted Monster';
+  font-size: 70px;
+  text-align: center;
+  color: #00FFD1;
+  margin: 0;
+}
+
+.containerUno{
+  margin: auto;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+  display:grid;
+  flex-direction: column;
+  place-items: center;
+  height: 90vh;
+}
+.monster{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.container{
+  margin: auto;
+  width: 90%;
+  justify-content:center;
+  align-items: center;
+  display:grid;
+  flex-direction: column;
+  place-items: center;
+  height: 60vh;
+}
+.wellcome{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  height: 60vh;
+}
+.moster{
+  width: 350px;
+  height: auto;
+}
+
+.text{
+  font-weight:100;
+  font-size: 1.5rem;
+  color: #00FFD1;
+  display: flex;
+  text-align: center;
+  margin-top: -30px;
+  font-family: 'Melted Monster';
+}
+
+
+.start{
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  padding:25px;
+  background: #F7FC00;
+  color: 310156;
+  background-blend-mode: multiply;
+  box-shadow: 0em .25em 2em 0em #B0FFF1;
+  border-radius: 1.25em;
+  font-size: 30px;
+  font-family: 'Irish Grover';
+  
+}
+
+.start:hover {
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  padding: 0;
+  height: 0;
+  align-items: center;
+  text-align: center;
+  color: #00FFD1;
+  text-shadow: 0px 3px 15px #00FFD1;
+  border: none;
+  
+}
+
+audio{
+  margin-top: 40px;
+  box-shadow: 0px 3px 15px #73AAB2;
+  border-radius: 30px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: #F7FC00;
+ 
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color:#240433;
+}
