@@ -1,131 +1,126 @@
 body {
-  background-color: #240433 !important;
+    background-color: #240433 !important;
 }
 
 .container {
-  max-height: 100vh;
-  padding: 0px 0px !important;
+    max-height: 100vh;
+    padding: 0px 0px !important;
 }
 
 .top {
-  width: auto;
-  height: 212px;
-  background-image: url('./assets/Images/background.png');
-  background-repeat: no-repeat;
-  background-size: 1500px 750px;
-  background-position: 45% 30%;
+    width: auto;
+    height: 212px;
+    background-image: url('./assets/Images/background.png');
+    background-repeat: no-repeat;
+    background-size: 1500px 750px;
+    background-position: 45% 30%;
 }
 
 .top button {
-  position: absolute;
-  right: 10px;
-  top: 15px;
-  font-family: 'Irish Grover';
-  background-color: var(--color-button);
-  color: var(--color-text-2);
-  padding: 3px 20px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-family: 'Irish Grover';
+    background-color: var(--color-button);
+    color: var(--color-text-2);
+    padding: 3px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .top button a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.3rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.3rem;
 }
 
 .monster a {
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent !important;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent !important;
 }
 
 .monster img {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 160px;
-  z-index: 2;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    z-index: 2;
 }
 
 .coders {
-  position: absolute;
-  width: 90%;
-  top: 380px;
-  margin: 15px;
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5px;
-  flex-wrap: wrap;
-  
-/*   color: var(--color-1);
+    position: absolute;
+    width: 90%;
+    top: 380px;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+    /*   color: var(--color-1);
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3); */
-  
-  font-family: 'Irish Grover';
-  z-index: 50;
+    font-family: 'Irish Grover';
+    z-index: 50;
 }
 
 .coders button {
-  font-family: 'Irish Grover';
-  background-color: var(--color-button);
-  color: var(--color-text-2);
-  padding: 3px 10px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
+    font-family: 'Irish Grover';
+    background-color: var(--color-button);
+    color: var(--color-text-2);
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .coders__list {
-  width: 100%;
-  height: 220px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5px;
-
-  overflow: auto;
-  white-space: nowrap;
-
-  font-size: 1.3rem;
-  font-family: 'Irish Grover';
-  font-weight: bold;
-  color: var(--color-text);
-
-  color: var(--color-text);
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  z-index: 50;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    overflow: auto;
+    white-space: nowrap;
+    font-size: 1.3rem;
+    font-family: 'Irish Grover';
+    font-weight: bold;
+    color: var(--color-text);
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 50;
 }
 
 .coder {
-  padding: 10px;
+    padding: 10px;
 }
 
 .coder:active {
-  color: var(--color-button);
+    color: var(--color-button);
 }
+
+
 /*
 .coders__chosen {
   position: absolute;
@@ -154,11 +149,11 @@ body {
 } */
 
 .bottom {
-  width: auto;
-  height: 470px;
-  background-image: url('./assets/Images/background.png');
-  background-repeat: no-repeat;
-  background-size: 1500px 750px;
-  background-position: 47% 30%;
-  transform: rotate(-180deg);
+    width: auto;
+    height: 470px;
+    background-image: url('./assets/Images/background.png');
+    background-repeat: no-repeat;
+    background-size: 1500px 750px;
+    background-position: 47% 30%;
+    transform: rotate(-180deg);
 }
