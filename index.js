@@ -224,9 +224,10 @@ class TextScramble {
   // ——————————————————————————————————————————————————
   
   const phrases = [
-    'Bienvenidos intrusos',
-    'a mi casa',
-    'estais preparado para ser devorados?',
+    'welcome coders',
+    'are you ready to be eaten?',
+    'i am really hungry aghh',
+    'gary is tasty like a cheeseburger'
   ]
   
   const el = document.querySelector('.text')

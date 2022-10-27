@@ -181,7 +181,8 @@ const sounds = [
 
 //para que suene la cancion principal al abrir el juego
 const mainTheme = new Audio('./assets/Sounds/monster-theme.mp3');
-mainTheme.volume = 0.3;
+mainTheme.volume = 0.2;
+mainTheme.autoplay = true;
 mainTheme.play();
 
 //monster sonido
@@ -192,10 +193,21 @@ monsterEats.addEventListener('click', monsterSound);
 function monsterSound(){
   let randomMonsterAudio = Math.floor(Math.random() * (3-0) + 0);
   const monsterAudio = new Audio(`${monsterSounds[randomMonsterAudio].sound}`)
-  monsterAudio.volume = 0.3;
+  monsterAudio.volume = 0.4;
   monsterAudio.loop = false;
-  monsterAudio.autoplay = true;
-  //monsterAudio.play();
+  monsterAudio.play();
+}
+
+//button play
+const buttonPlay = document.querySelector('.start');
+
+buttonPlay.addEventListener('click', btnPlay);
+
+function btnPlay(){
+  const btnPlay1 = new Audio(`${sounds[0].sound}`);
+  btnPlay1.volume = 0.4;
+  btnPlay1.loop = false;
+  btnPlay1.play();
 }
 
 //button 1 sonido
@@ -205,7 +217,7 @@ buttonSound1.addEventListener('click', btnSound);
 
 function btnSound(){
   const btnAudio1 = new Audio(`${sounds[0].sound}`);
-  btnAudio1.volume = 0.3;
+  btnAudio1.volume = 0.4;
   btnAudio1.loop = false;
   btnAudio1.play();
 }
@@ -217,7 +229,7 @@ buttonSound2.addEventListener('click', btnSound2);
 
 function btnSound2(){
   const btnAudio2 = new Audio(`${sounds[1].sound}`);
-  btnAudio2.volume = 0.3;
+  btnAudio2.volume = 0.4;
   btnAudio2.loop = false;
   btnAudio2.play();
 }
@@ -229,7 +241,8 @@ buttonSound3.addEventListener('click', btnSound3);
 
 function btnSound3(){
   const btnAudio3 = new Audio(`${sounds[2].sound}`);
-  btnAudio3.volume = 0.3;
+  btnAudio3.volume = 0.4;
+  btnAudio3.loop = false;
   btnAudio3.play();
 }
 
