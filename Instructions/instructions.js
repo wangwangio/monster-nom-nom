@@ -11,7 +11,7 @@
 
 // Movimiento imagen monstruo
 // Get UI Elements
-const img = document.querySelector("img");
+const img = document.querySelector(".monsterMouse");
 const container = document.querySelector("body");
 
 // Add Event Listener
