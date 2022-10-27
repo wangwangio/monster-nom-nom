@@ -68,18 +68,16 @@ h1{
 }
 .moster{
   width: 350px;
-  height: 420px;
-
-  
-  
+  height: auto;
 }
+
 .text{
   font-weight:100;
-  font-size:28px;
+  font-size: 1.5rem;
   color: #00FFD1;
   display: flex;
   text-align: center;
-  margin-top: 50px;
+  margin-top: -30px;
   font-family: 'Melted Monster';
 }
 
