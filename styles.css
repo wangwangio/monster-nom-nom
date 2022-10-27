@@ -75,6 +75,10 @@ h3 {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
 .imgGO {
     width: 17rem;
     height: 19rem;
@@ -86,20 +90,21 @@ h3 {
 .btnPA {
     margin-bottom: 1em;
     color: var(--color-text-2);
-    font-family: 'Melted Monster';
+    font-family: 'Irish Grover';
     padding: 0.75rem, 1.5rem;
     font-size: 2rem;
     border-width: 1px;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
     border-color: var(--white);
     min-width: 168px;
     max-width: 168px;
     min-height: 60px;
-    background: white;
-    /*  background-color: linear-gradient( rgb(247, 242, 247), rgb(239, 23, 239), rgb(215, 18, 182), ); */
-    animation: animeB 1.5s linear infinite;
-    filter: blur(7px);
+    background: #F7FC00;
+    /*   animation: animeB 1.5s linear infinite; */
+    /*  filter: blur(7px); */
     cursor: pointer;
+    box-shadow: 0em .25em 2em 0em #B0FFF1;
+    background-blend-mode: multiply;
 }
 
 @keyframes animeB {
@@ -127,11 +132,13 @@ h3 {
     min-width: 128px;
     max-width: 128px;
     background-color: rgb(255, 9, 210);
+    box-shadow: 0em .25em 2em 0em #B0FFF1;
 }
 
 .btnCoders:hover {
     background-color: #F7FC00;
     color: #240433;
+    box-shadow: 0em .25em 2em 0em #B0FFF1;
 }
 
 .btnMonster {
@@ -170,10 +177,6 @@ h3 {
  gracias From Andrés Esteban Patiño Gómez to Everyone 02:20 PM $ {
      coder
  } */
-
-`$ {
-    coder
-}
 
 @font-face {
     font-family: 'Melted Monster';
@@ -216,24 +219,8 @@ h1 {
 
 /*ERICK*/
 
-.start {
-    width: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 1rem;
-    padding: 25px;
-    background: #F7FC00;
-    color: 310156;
-    background-blend-mode: multiply;
-    box-shadow: 0em .25em 2em 0em #B0FFF1;
-    border-radius: 1.25em;
-    font-size: 30px;
-    font-family: ‘Irish Grover’;
-}
 
-.start:hover {
+/* .start:hover {
     margin-top: 25px;
     font-style: normal;
     font-weight: 400;
@@ -247,4 +234,4 @@ h1 {
     color: #00FFD1;
     text-shadow: 0px 3px 15px #00FFD1;
     border: none;
-}
+} */

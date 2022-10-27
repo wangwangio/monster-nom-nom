@@ -111,7 +111,6 @@ function finPOP() {
                 imageHeight: '78%',
                 width: '50%',
                 confirmButtonText: '<a href="/monster-nom-nom/index.html" > I AM DONE',
-
             })
         }
     });
@@ -151,12 +150,12 @@ function killed() {
         customClass: { title: 'titleAlert' },
         title: 'KILLED!',
         imageUrl: '/monster-nom-nom/assets/Images/monster.png',
-        imageWidth: '45%',
+        imageWidth: '50%',
         imageHeight: '50%',
         showConfirmButton: false,
-        background: 'rgb(255, 9, 210',
+        background: 'rgb(255, 9, 210)',
         width: '50%',
-        height: '100%',
+        height: '90%',
         timer: '1000',
     });
 }
