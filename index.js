@@ -164,7 +164,7 @@ function killed() {
 
 
 
-
+//funcion enunciado animado primera pagina Erick//
 class TextScramble {
     constructor(el) {
       this.el = el
@@ -244,3 +244,5 @@ class TextScramble {
 
   //let audio = document.getElementById("myaudio");
   //audio.volume = 0.2;
+
+  //funcion enunciado animado primera pagina Erick//
