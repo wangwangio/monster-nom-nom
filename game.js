@@ -198,18 +198,6 @@ function monsterSound(){
   monsterAudio.play();
 }
 
-//button play
-const buttonPlay = document.querySelector('.start');
-
-buttonPlay.addEventListener('click', btnPlay);
-
-function btnPlay(){
-  const btnPlay1 = new Audio(`${sounds[0].sound}`);
-  btnPlay1.volume = 0.4;
-  btnPlay1.loop = false;
-  btnPlay1.play();
-}
-
 //button 1 sonido
 const buttonSound1 = document.getElementById('addCoder');
 
@@ -279,23 +267,3 @@ function randomKill(){
   
   alert(coderDead.innerHTML + ' has been eaten! NOM NOM!');
 }
-
-
- /*
-  //ahora añadimos que cuando se haga click en el singleCoder que aparezca un nuevo div con sus datos
-  const btnAddChosen = document.getElementById('singleCoder');
-  const codersContainerChosen = document.getElementById('monster');
-
-  for (i=0; i < btnAddChosen.length; i++){
-    btnAddChosen[i].addEventListener('click', coderSacrifice(btnAddChosen[i]));
-  }
-
-  function coderSacrifice(el){
-    const coderChosen = document.createElement('div');
-    codersContainerChosen.appendChild(coderChosen);
-    codersContainerChosen.lastElementChild.classList.add('coders__chosen');
-
-    codersContainerChosen.lastElementChild.innerHTML = `${el.innerHTML}`;
-  }
-} */
-
