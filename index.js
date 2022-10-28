@@ -52,10 +52,12 @@ function incrementClick() {
 }
 
 function gameOver() {
-    if (counterScore === 27) {
-        alert('GAME OVER');
-    }
+    then(counterScore === 27)
+    window.alert('GAME OVER');
+    console.log("gameOver")
 }
+
+
 
 function updateDisplay(score) {
     document.getElementById("counter-label").innerHTML = score;
@@ -148,14 +150,14 @@ function exitBtn() {
 function killed() {
     Swal.fire({
         customClass: { title: 'imgDiv' },
-        title: 'KILLED!',
+        title: 'I AM FULL!',
         imageUrl: '/monster-nom-nom/assets/Images/monster.png',
         imageWidth: 200,
         imageHeight: 200,
         showConfirmButton: false,
         background: 'rgb(255, 9, 210',
-        width: '30%',
-        height: '30%',
+        width: '50%',
+        height: '50%',
         timer: '1000',
     });
 }
