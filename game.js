@@ -182,8 +182,8 @@ const sounds = [
 //para que suene la cancion principal al abrir el juego
 const mainTheme = new Audio('./assets/Sounds/monster-theme.mp3');
 mainTheme.volume = 0.2;
-// mainTheme.autoplay = true;
-// mainTheme.play();
+mainTheme.autoplay = true;
+mainTheme.play();
 
 //monster sonido
 const monsterEats = document.getElementById('monsterSound');
