@@ -265,5 +265,7 @@ function randomKill(){
   let randomDeath = Math.floor(Math.random() * coders.length + 0);
   coderDead.parentNode.removeChild(singleCoder[randomDeath]);
   
-  alert(coderDead.innerHTML + ' has been eaten! NOM NOM!');
+/*   for(i = 0; i < coders.length; i++){
+    alert(coderDead.innerHTML + ' has been eaten! NOM NOM!');
+  } */
 }
