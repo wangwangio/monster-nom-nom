@@ -107,10 +107,10 @@ function finPOP() {
                 title: "COME BACK SOON",
                 buttonsStyling: false,
                 background: '#240433',
-                imageUrl: '/monster-nom-nom/assets/Images/monster.png',
+                imageUrl: 'assets/Images/monster.png',
                 imageHeight: '78%',
                 width: '50%',
-                confirmButtonText: '<a href="/monster-nom-nom/index.html" > I AM DONE',
+                confirmButtonText: '<a href="/index.html"> I AM DONE',
             })
         }
     });
@@ -122,13 +122,13 @@ function exitBtn() {
         title: 'ARE YOU SURE',
         color: '#fff',
         background: '#240433',
-        imageUrl: '/monster-nom-nom/assets/Images/monsterGO.jpg',
+        imageUrl: 'assets/Images/monsterGO.jpg',
         imageHeight: '100%',
         width: '100%',
         imageAlt: 'GAME OVER',
         showCancelButton: true,
         buttonsStyling: false,
-        confirmButtonText: '<a href="/monster-nom-nom/fin.html" > Yes, I am!',
+        confirmButtonText: '<a href="fin.html" > Yes, I am!',
         cancelButtonText: 'NO',
     }).then((result) => {
         if (result.isConfirmed) {
@@ -137,7 +137,7 @@ function exitBtn() {
                 title: "COME BACK SOON",
                 buttonsStyling: false,
                 background: '#240433',
-                imageUrl: '/monster-nom-nom/assets/Images/monster.png',
+                imageUrl: 'assets/Images/monster.png',
                 imageHeight: '78%',
                 width: '50%',
             })
@@ -149,7 +149,7 @@ function killed() {
     Swal.fire({
         customClass: { title: 'titleAlert' },
         title: 'KILLED!',
-        imageUrl: '/monster-nom-nom/assets/Images/monster.png',
+        imageUrl: 'assets/Images/monster.png',
         imageWidth: '50%',
         imageHeight: '50%',
         showConfirmButton: false,
@@ -159,9 +159,6 @@ function killed() {
         timer: '1000',
     });
 }
-
-
-
 
 //funcion enunciado animado primera pagina Erick//
 class TextScramble {

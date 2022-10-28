@@ -49,30 +49,50 @@ h3 {
 
 
 /*Game Over*/
-
-.bodyGO {
-    background-image: url(/monster-nom-nom/assets/Images/backgroundGO.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100%;
-    ;
+.bg__gameOver {
+    background-color: var(--bg);
 }
 
-.redGO {
-    background: #ff149189;
-    border-radius: 10px;
-    margin-top: 1em;
-    margin-right: 2em;
-    margin-left: 2em;
-    margin-bottom: 1em;
+.top__gameOver {
+    width: auto;
+    height: 212px;
+    background-image: url('./assets/Images/background.png');
+    background-repeat: no-repeat;
+    background-size: 1500px 750px;
+    background-position: 45% 30%;
+}
+
+.top__gameOver h1 {
+    margin-top: 0;
+    padding-top: 50px;
+    font-size: 3.5rem;
+}
+
+.bottom__gameOver {
+    width: auto;
+    height: 470px;
+    background-image: url('./assets/Images/background.png');
+    background-repeat: no-repeat;
+    background-size: 1500px 750px;
+    background-position: 47% 30%;
+    transform: rotate(-180deg);
 }
 
 .imgDiv {
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    z-index: 1;
+}
+
+.btnDiv {
     text-align: center;
     margin-top: 2em;
     font-family: 'Irish Grover';
     color: #fff;
+    position: absolute;
+    top: 440px;
+    z-index: 2;
 }
 
 a {
@@ -103,8 +123,8 @@ a {
     /*   animation: animeB 1.5s linear infinite; */
     /*  filter: blur(7px); */
     cursor: pointer;
-    box-shadow: 0em .25em 2em 0em #B0FFF1;
-    background-blend-mode: multiply;
+/*     box-shadow: 0em .25em 2em 0em #B0FFF1;
+    background-blend-mode: multiply; */
 }
 
 @keyframes animeB {

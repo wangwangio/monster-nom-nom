@@ -56,20 +56,11 @@ body {
     width: 90%;
     top: 380px;
     margin: 15px;
-    padding: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
     flex-wrap: wrap;
-    /*   color: var(--color-1);
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3); */
     font-family: 'Irish Grover';
     z-index: 50;
 }
@@ -120,34 +111,6 @@ body {
     color: var(--color-button);
 }
 
-
-/*
-.coders__chosen {
-  position: absolute;
-  width: 90%;
-  top: 430px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5px;
-
-  font-size: 1.3rem;
-  font-weight: bold;
-  font-family: 'Irish Grover';
-
-  color: var(--color-text);
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  z-index: 100;
-} */
-
 .bottom {
     width: auto;
     height: 470px;
@@ -156,4 +119,30 @@ body {
     background-size: 1500px 750px;
     background-position: 47% 30%;
     transform: rotate(-180deg);
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+    background-color: var(--bg);
+    color: var(--color-text);
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: var(--color-button) !important;
+    color: var(--color-text-2) !important;
+    font-family: 'Irish Grover';
+    font-size: 1.3rem;
+    width: 100px;
+}
+
+.swal2-confirm.swal2-styled {
+    background-color: var(--color-button) !important;
+    color: var(--color-text-2) !important;
+}
+
+.swal2-title {
+    font-family: 'Irish Grover';
+}
+
+.swal2-image {
+    width: 300px;
 }

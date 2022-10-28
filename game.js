@@ -182,13 +182,14 @@ const sounds = [
 //para que suene la cancion principal al abrir el juego
 const mainTheme = new Audio('./assets/Sounds/monster-theme.mp3');
 mainTheme.volume = 0.2;
-mainTheme.autoplay = true;
-mainTheme.play();
+// mainTheme.autoplay = true;
+// mainTheme.play();
 
 //monster sonido
 const monsterEats = document.getElementById('monsterSound');
 
 monsterEats.addEventListener('click', monsterSound);
+monsterEats.addEventListener('click', enlargeImg);
 
 function monsterSound(){
   let randomMonsterAudio = Math.floor(Math.random() * (3-0) + 0);
@@ -196,6 +197,13 @@ function monsterSound(){
   monsterAudio.volume = 0.4;
   monsterAudio.loop = false;
   monsterAudio.play();
+}
+
+function enlargeImg(){
+  // Set image size to 1.5 times original
+  monsterBigger.style.transform = "scale(1.5)";
+  // Animation effect
+  monsterBigger.style.transition = "transform 0.25s ease";
 }
 
 //button 1 sonido
@@ -263,7 +271,20 @@ monsterKill.addEventListener('click', randomKill);
 function randomKill(){
   var coderDead = document.getElementById('singleCoder');
   let randomDeath = Math.floor(Math.random() * coders.length + 0);
-  coderDead.parentNode.removeChild(singleCoder[randomDeath]);
-  
-  alert(coderDead.innerHTML + ' has been eaten! NOM NOM!');
+  let singleCoderDead = coderDead.parentNode.removeChild(singleCoder[randomDeath]);
+
+  //alert para cuando el monstruo mata a un coder
+  Swal.fire({
+    title: `${singleCoderDead.innerHTML}` + ' has been eaten! NOM NOM!',
+    text: '',
+    imageUrl: './assets/Images/monsterCortado.png',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+    showConfirmButton: false,
+    timer: '3000'
+  })
+
+  //comprovación
+  console.log(singleCoderDead);
 }
